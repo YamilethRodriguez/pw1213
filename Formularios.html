@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formularios</title>
+</head>
+<body>
+	Formulario:Contenedor que sirve para encapsular metodos de 
+	entrada de datos del usuario.<br>
+	En el formulario se puede:<br>
+	<ol>
+		<li>Capturar datos</li>
+		<li>Validar lo que se ingresa</li>
+		<li>Enviar a proceso</li>
+		<li>Reiniciar la captura</li>
+	</ol>
+	<!--action:quien va a enviar los datos<br>-->
+	<!--method:como se van a enviar esos datos-->
+	<!--post:no se ven los datos en la url-->
+	<form action="procesa.html" method="post">
+		<!--requerid:datos requerido-->
+		<input name="txtNumeroControl" type="text" placeholder="N&uacute;mero de Control" requerid>
+		<!--autofocus:se pone el cursor en la caja de texto de password-->
+		<input name="txtClave" type="password" placeholder ="Clave de acceso" requerid autofocus>
+		<input name="txtPromedio" type="number" placeholder="Promedio">
+		<input name="txtFecha" type="date">
+		<input name="txtColor" type="color">
+		<input name="txtCorreo" type="email">
+		<input name="txtBuscar" type="search">
+		<!--Dispara la accion del form-->
+		<input type="submit" value="Enviar">
+		<!--boton para borrar los datos-->
+		<input type="reset" value="Borrar">
+		<!--Simple boton-->
+		<input type="button" value="Enviar">
+	</form>
+
+
+
+</body>
+</html>
